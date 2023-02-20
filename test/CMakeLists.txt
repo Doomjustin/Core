@@ -44,3 +44,6 @@ catch_discover_tests(test-catch2)
 
 sf_add_core_test_without_catch2(test-thread-pool test_thread_pool.cpp)
 sf_add_core_test_without_catch2(test-timer test_timer.cpp)
+sf_add_core_test_without_catch2(test-unit test_unit.cpp)
+
+sf_add_core_test(test-utility test_utility.cpp)

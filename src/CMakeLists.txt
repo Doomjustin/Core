@@ -10,6 +10,7 @@ add_library(SF_CORE
         ${SF_INTERNAL_INCLUDE_DIR}/ThreadPool.h
         ${SF_INTERNAL_INCLUDE_DIR}/Container/Heap.h
         ${SF_INTERNAL_INCLUDE_DIR}/Timer.h
+        ${SF_INTERNAL_INCLUDE_DIR}/Unit.h
         ThreadPool.cpp
 )
 add_library(SF::Core ALIAS SF_CORE)
