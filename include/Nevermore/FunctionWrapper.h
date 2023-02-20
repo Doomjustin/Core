@@ -36,7 +36,7 @@ public:
 private:
     struct Callable {
     public:
-        ~Callable() {}
+        virtual ~Callable() {}
 
         virtual void call() noexcept = 0;
     };
@@ -53,7 +53,7 @@ private:
 
         void call() noexcept override
         {
-        f();
+            f();
         }
 
     };

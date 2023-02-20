@@ -8,6 +8,8 @@ add_library(SF_CORE
         ${SF_INTERNAL_INCLUDE_DIR}/NumericUtility.h
         ${SF_INTERNAL_INCLUDE_DIR}/FunctionWrapper.h
         ${SF_INTERNAL_INCLUDE_DIR}/ThreadPool.h
+        ${SF_INTERNAL_INCLUDE_DIR}/Container/Heap.h
+        ${SF_INTERNAL_INCLUDE_DIR}/Timer.h
         ThreadPool.cpp
 )
 add_library(SF::Core ALIAS SF_CORE)

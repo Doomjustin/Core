@@ -43,3 +43,4 @@ target_link_libraries(test-catch2 PRIVATE Catch2::Catch2WithMain)
 catch_discover_tests(test-catch2)
 
 sf_add_core_test_without_catch2(test-thread-pool test_thread_pool.cpp)
+sf_add_core_test_without_catch2(test-timer test_timer.cpp)
