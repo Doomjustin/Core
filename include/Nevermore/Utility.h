@@ -30,9 +30,6 @@ T& make_singleton(Args&&... args)
     return singleton;
 }
 
-} // namespace SF
-
-
 // 抄袭自Qt的QT_DISABLE_COPY
 #define SF_DISABLE_COPY(Class) \
     Class(const Class& other) = delete;\
@@ -54,7 +51,7 @@ T& make_singleton(Args&&... args)
     Class& operator=(const Class& other);
 
 #define SF_MOVE_SEMANTIC_FWD(Class) \
-    Class(Class&& other) noexcept ; \
+    Class(Class&& other) noexcept; \
     Class& operator=(Class&& other) noexcept;
 
 #define SF_COPY_SEMANTIC_DEFINATION(Class) \
@@ -72,5 +69,7 @@ T& make_singleton(Args&&... args)
 #define SF_MOVE_SEMANTIC_DEFINATION_DELETE(Class) \
     Class::Class(Class&& other) noexcept = delete; \
     Class& Class::operator=(Class&& other) noexcept = delete;
+
+} // namespace SF
 
 #endif // NEVERMORE_UTILITY_H
