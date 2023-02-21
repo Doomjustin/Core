@@ -32,7 +32,7 @@ public:
     BasicHeap(std::initializer_list<T> init_list)
       : elements_{ init_list }
     {
-        keep_as_heap();
+        std::make_heap(elements_.begin(), elements_.end(), comparator_);
     }
 
     template<typename... Args>
@@ -70,11 +70,6 @@ public:
 private:
     Comparator comparator_;
     std::vector<T> elements_;
-
-    void keep_as_heap()
-    {
-        std::make_heap(elements_.begin(), elements_.end(), comparator_);
-    }
 };
 
 template<typename T>
