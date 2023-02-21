@@ -1,5 +1,5 @@
-#ifndef NEVERMORE_TEMPLATE_H
-#define NEVERMORE_TEMPLATE_H
+#ifndef NEVERMORE_TIMER_H
+#define NEVERMORE_TIMER_H
 
 #include "ThreadPool.h"
 #include "Utility.h"
@@ -146,4 +146,4 @@ using TimerManager = BasicTimerManager<std::chrono::steady_clock, std::chrono::n
 
 } // namespace SF
 
-#endif // NEVERMORE_TEMPLATE_H
+#endif // NEVERMORE_TIMER_H
